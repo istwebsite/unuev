@@ -1,0 +1,70 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto 0;
+}
+
+main .title {
+  font-weight: 700;
+  font-size: 7.5em;
+  color: #474747;
+}
+
+main .soon {
+  font-weight: 900;
+  font-size: 2.3em;
+  color: #666666;
+}
+
+#footer {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#footer p {
+  width: max-content;
+  margin: 30px auto;
+  color: #999999;
+}
+
+#footer p span {
+  font-size: 35px;
+}
+
+@media (max-width: 978px) {
+  main .title {
+    font-size: 6.5em;
+  }
+  main .soon {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 707px) {
+    main .title {
+      font-size: 4.5em;
+    }
+    
+  }
+
+  
