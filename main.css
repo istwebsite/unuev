@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100vh;
   display: flex;
@@ -9,62 +14,57 @@ p {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-}
-
-h1 {
-  margin: 0;
+  color: #96989b;
 }
 
 main {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 8em;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin: auto 0;
 }
 
-main .title {
-  font-weight: 700;
-  font-size: 7.5em;
-  color: #474747;
+.title-logo{
+  padding: 2rem;
+}
+
+.title-logo img{
+  width: 100%;
 }
 
 main .soon {
   font-weight: 900;
-  font-size: 2.3em;
-  color: #666666;
+  font-size: 2rem;
 }
 
 #footer {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
+  padding: 0 2rem 2rem 0;
+  display: flex;
+  justify-content: end;
 }
 
 #footer p {
-  width: max-content;
-  margin: 30px auto;
-  color: #999999;
+  margin: 0;
 }
 
 #footer p span {
-  font-size: 35px;
+  font-size: 2.1rem;
+}
+
+@media (max-width: 1310px) {
+  #footer {
+    justify-content: center;
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 978px) {
-  main .title {
-    font-size: 6.5em;
-  }
   main .soon {
     font-size: 1.3em;
   }
 }
-
-@media (max-width: 707px) {
-    main .title {
-      font-size: 4.5em;
-    }
-    
-  }
-
-  
